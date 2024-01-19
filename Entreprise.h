@@ -8,6 +8,12 @@ class Entreprise
 {
 private:
 	string nom;
+public:
+	Vendeurs vendeur[5];
+	Representants representant[2];
+	Techniciens technicien[3];
+	Interimaires interilaires[5];
+	Entreprise(string _nom);
 
 };
 

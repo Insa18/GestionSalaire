@@ -30,6 +30,7 @@ void Employes::getCar()
 	cout << "Prenom : " << prenom << endl;
 	cout << "Age : " << age << endl;
 	cout << "Salaire : " << salaire << endl;
+	cout << endl;
 }
 
 Employes::Employes(string _nom, string _prenom, int _age)
@@ -63,4 +64,9 @@ Representants::Representants(string _nom, string _prenom, int _age, float _prime
 void Representants::calculS()
 {
 	salaire = 50 + (5 * primes) + (1 * fraisD);
+}
+
+Entreprise::Entreprise(string _nom)
+{
+	nom = _nom;
 }
