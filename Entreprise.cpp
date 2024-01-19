@@ -2,6 +2,10 @@
 #include <iostream>
 using namespace std;
 
+Techniciens::Techniciens()
+{
+}
+
 Techniciens::Techniciens(string _nom, string _prenom, int _age):Employes(_nom, _prenom, _age)
 {
 
@@ -12,6 +16,10 @@ void Techniciens::calculS()
 	salaire = salaireBase;
 }
 
+Interimaires::Interimaires()
+{
+}
+
 Interimaires::Interimaires(string _nom, string _prenom, int _age, float _tauxHoraire) :Employes(_nom, _prenom, _age)
 {
 	tauxHoraire = _tauxHoraire;
@@ -19,10 +27,14 @@ Interimaires::Interimaires(string _nom, string _prenom, int _age, float _tauxHor
 
 void Interimaires::calculS()
 {
-	salaire = 0.5*tauxHoraire;
+	salaire = 0.5f*tauxHoraire;
 }
 
 
+
+Employes::Employes()
+{
+}
 
 void Employes::getCar()
 {
@@ -40,9 +52,17 @@ Employes::Employes(string _nom, string _prenom, int _age)
 	age = _age;
 }
 
+Commerciaux::Commerciaux()
+{
+}
+
 Commerciaux::Commerciaux(string _nom, string _prenom, int _age): Employes(_nom, _prenom, _age)
 {
 	
+}
+
+Vendeurs::Vendeurs()
+{
 }
 
 Vendeurs::Vendeurs(string _nom, string _prenom, int _age, float _primes): Commerciaux(_nom, _prenom, _age)
@@ -53,6 +73,10 @@ Vendeurs::Vendeurs(string _nom, string _prenom, int _age, float _primes): Commer
 void Vendeurs::calculS()
 {
 	salaire = 50 + (2 * primes);
+}
+
+Representants::Representants()
+{
 }
 
 Representants::Representants(string _nom, string _prenom, int _age, float _primes, float _fraisD): Commerciaux(_nom, _prenom, _age)

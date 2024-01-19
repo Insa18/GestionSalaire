@@ -12,9 +12,19 @@ int main()
 	entreprise1.representant[1] = Representants ("vvaf", "Georges", 20, 2, 8);
 	entreprise1.technicien[0] = Techniciens ("hbih", "Robert", 60);
 	entreprise1.technicien[1] = Techniciens ("zdz", "Raymond", 28);
-	entreprise1.interilaires[0] = Interimaires ("befay", "Jean-Claude", 55, 75);
-	entreprise1.interilaires[1] = Interimaires ("mio", "Jean-Paul", 58, 50);
-	entreprise1.interilaires[2] = Interimaires ("imiomiay", "Jean-Marie", 35, 50);
-	entreprise1.interilaires[3] = Interimaires ("fs", "Jean-Jean", 18, 0);
+	entreprise1.interimaires[0] = Interimaires ("befay", "Jean-Claude", 55, 75);
+	entreprise1.interimaires[1] = Interimaires ("mio", "Jean-Paul", 58, 50);
+	entreprise1.interimaires[2] = Interimaires ("imiomiay", "Jean-Marie", 35, 50);
+	entreprise1.interimaires[3] = Interimaires ("fs", "Jean-Jean", 18, 0);
+
+	entreprise1.vendeur[0].calculS();
+	entreprise1.vendeur[0].getCar();
+	entreprise1.representant[0].calculS();
+	entreprise1.representant[0].getCar();
+	entreprise1.technicien[1].calculS();
+	entreprise1.technicien[1].getCar();
+	entreprise1.interimaires[2].calculS();
+	entreprise1.interimaires[2].getCar();
+
 
 }
